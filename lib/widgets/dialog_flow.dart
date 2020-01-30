@@ -1,4 +1,5 @@
 import 'package:bot/home.dart';
+import 'package:bot/widgets/caller.dart';
 import 'package:flutter/material.dart';
 import 'fact_message.dart';
 import 'package:flutter_dialogflow_v2/flutter_dialogflow.dart';
@@ -79,7 +80,25 @@ class _FlutterFactsDialogFlowState extends State<FlutterFactsDialogFlow>  {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("Chat Bot"),
+        actions: <Widget>[
+            // action button
+            IconButton(
+              icon: Icon(Icons.child_care),
+              onPressed: () {
+                 Navigator.push(context, 
+        MaterialPageRoute(
+          builder: (context)=> DialPad ()
+        )
+        );
+                
+              },
+            ),
+            // overfl
+          ],
+      ),
       body: Column(children: <Widget>[
         Flexible(
             child: ListView.builder(
