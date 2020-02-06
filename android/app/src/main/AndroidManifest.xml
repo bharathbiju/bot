@@ -6,6 +6,11 @@
          additional functionality it is fine to subclass or reimplement
          FlutterApplication and put your custom class here. -->
     <uses-permission android:name="android.permission.INTERNET"/>
+     <uses-permission android:name="android.permission.CALL_PHONE"/>
+     <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyDXWH59aF-trl0HhWAx5Ye44VDTA1gB9W4"/>
+
+
     
     <application
         android:name="io.flutter.app.FlutterApplication"
@@ -28,5 +33,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+             <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyDXWH59aF-trl0HhWAx5Ye44VDTA1gB9W4"/>
     </application>
 </manifest>

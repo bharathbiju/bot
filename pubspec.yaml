@@ -22,6 +22,10 @@ dependencies:
   flutter_dialogflow: ^0.1.2
   flutter_dialogflow_v2: ^0.1.0
   call_number: ^0.0.1
+  google_maps_flutter: ^0.5.22+1
+  google_map_polyline:
+  permission:
+  
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
